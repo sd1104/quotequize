@@ -1,9 +1,21 @@
 <div id="app">
-  <p>
-    {{ message }}
-  </p>
+
 </div>
 
 <%= link_to 'Book#Index', books_path %>
 
 <%= javascript_pack_tag 'hello_vue' %>
+
+<%# v-model
+  <p>
+    <input type="text" v-model="message">
+  </p>
+  <p>
+    <input type="text" v-model="message">
+  </p>
+  <pre>
+    {{ $data }}
+  </pre> %>
+
+<%# コンポーネント
+  <hello-component></hello-component> %>
