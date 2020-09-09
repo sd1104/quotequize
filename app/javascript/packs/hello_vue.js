@@ -1,9 +1,25 @@
 import Vue from 'vue/dist/vue.esm'
 
-Vue.component('hello-component', {
-  template: '<p>Hello</p>'
-})
+var app = new Vue ({
+  el: '#app',
+  data: {
+    newItem: '',
+    todos: []
+  },
+  methods: {
+    addItem: function(event) {
+      if(this.newItem == '') return;
+      var todo = {
+        item: this.newItem,
+        isDone: false
+      };
 
-const app = new Vue ({
-  el: '#app'
+      this.todos.push(todo)
+      this.newItem=''
+    },
+    deleteItem: function(index) {
+      // alert(index);
+      this.todos.splice(index, 1)
+    }
+  }
 })
