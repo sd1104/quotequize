@@ -1,0 +1,27 @@
+<div id="app">
+  <h2>TODO List</h2>
+  <form v-on:submit.prevent>
+    <input type="text" class="form-control" id="formGroupExampleInput" v-model="newItem">
+    <button type="button" class="btn btn-primary">
+      Add
+    </button>
+  </form>
+  <ul>
+    <li v-for="(todo, index) in todos">
+      <input type="checkbox" v-model="todo.isDone">
+      <span v-bind:class="{ done: todo.isDone }">
+        {{ todo.item }}
+      </span>
+      <button v-on:click="deleteItem(index)">
+        Delete
+      </button>
+    </li>
+  </ul>
+  <pre>{{ $data }}</pre>
+  <%= link_to 'books#index', books_path %>
+</div>
+
+
+
+
+<%= javascript_pack_tag 'hello_vue' %>
