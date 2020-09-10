@@ -102,17 +102,44 @@
   <div>
     <h4>イベントの基本 v-on</h4>
     <br>
+    <button v-on:click="onclick" class="btn btn-primary">
+      Test!
+    </button>
+    <br>
+    <p>
+      {{ now }}
+    </p>
+    <br>
+    <hr>
+  </div>
+
+  <div>
+    <h4>双方向データバインディング v-model</h4>
+    <br>
     <div class="form-group row">
-      <label for="inputEmail3" class="col-sm-2 col-form-label">v-bind</label>
+      <label for="inputEmail3" class="col-sm-2 col-form-label">v-model</label>
       <div class="col-sm-10">
-        <input v-bind:value="message" type="email" class="form-control" id="inputEmail3">
+        <input v-model="message" type="email" class="form-control" id="inputEmail3">
       </div>
-    </div>
-    <div class="form-group row">
-      <div class="col-sm-10 offset-sm-2">
-        <button type="submit" class="btn btn-primary">Test!</button>
+      <label for="inputEmail3" class="col-sm-2 col-form-label">v-model</label>
+      <div class="col-sm-10">
+        <input v-model="message" type="email" class="form-control" id="inputEmail3">
       </div>
-    </div>
+      <br>
+      <br>
+      <br>
+      <pre>
+        message = {{ $data.message }}
+      </pre>
+    <br>
+    <hr>
+  </div>
+
+  <div>
+    <h4>コンポーネントの基本</h4>
+    <br>
+    <hello-component></hello-component>
+    <hello-component></hello-component>
     <br>
     <hr>
   </div>
