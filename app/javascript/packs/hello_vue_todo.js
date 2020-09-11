@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.config.productionTip = false
 
-var todo = new Vue ({
+const todo = new Vue ({
   el: '#todo',
   data: {
     newItem: '',

@@ -1,4 +1,4 @@
-#app ul {
+#todo ul {
   list-style: none;
 }
 
@@ -6,7 +6,7 @@
   display: none;
 }
 
-#app li > span.done {
+#todo li > span.done {
   text-decoration: line-through;
 }
 
