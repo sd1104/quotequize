@@ -1,0 +1,25 @@
+<div id="todo">
+  <h2>TODO List</h2>
+  <form v-on:submit.prevent>
+    <input class="form-control mb-2 mr-sm-2" type="text" v-model="newItem">
+    <button class="btn-primary" v-on:click="addItem">
+      Add
+    </button>
+  </form>
+  <ul>
+    <li v-for="(todo, index) in todos">
+      <input class="form-check-input" type="checkbox" v-model="todo.isDone">
+      <span v-bind:class="{ done: todo.isDone }">
+        {{ todo.item }}
+      </span>
+      <button  class="btn-secondary" v-on:click="deleteItem(index)">
+        Delete
+      </button>
+    </li>
+  </ul>
+  <pre>{{ $data }}</pre>
+</div>
+<br><br><br>
+<%= link_to '>>HOME', root_path %>
+
+<%= javascript_pack_tag 'hello_vue_todo' %>
