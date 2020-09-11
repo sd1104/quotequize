@@ -1,0 +1,24 @@
+<div id="bit">
+
+  <h2>Bitcoin Price</h2>
+  <section v-if="haserror">
+    Error
+  </section>
+  <section v-else>
+    <div v-if="loading">
+      Loading...
+    </div>
+    <div>
+      <ul v-cloak>
+        <li v-for="(rate, currency) in bpi">
+          {{ currency }}：{{ rate.rate_float | currencyDecimal }}
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+<br><br><br>
+<%= link_to '>>HOME', root_path %>
+
+<%= javascript_pack_tag 'hello_vue_bitcoin' %>

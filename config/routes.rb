@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     collection do
       get 'home'
       get 'basic'
+      get 'bitcoin'
     end
   end
   resources :books, only: :index

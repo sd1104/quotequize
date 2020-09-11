@@ -4,4 +4,7 @@ class PageController < ApplicationController
 
   def basic
   end
+
+  def bitcoin
+  end
 end
