@@ -4,7 +4,9 @@ import Axios from 'axios'
 var bit = new Vue ({
   el: '#bit',
   data: {
-    bpi: null
+    bpi: null,
+    haserror: false,
+    loading: true
   },
   mounted: function() {
     Axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
@@ -15,6 +17,15 @@ var bit = new Vue ({
     }.bind(this))
     .catch(function(error){
       console.log(error)
-    })
+      this.haserror = true
+    }.bind(this))
+    .finally(function(){
+      this.loading = false
+    }.bind(this))
+  },
+  filters: {
+    currencyDecimal(value) {
+      return value.toFixed(2)
+    }
   }
 })
