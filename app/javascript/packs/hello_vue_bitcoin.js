@@ -12,6 +12,9 @@ var bit = new Vue ({
       // console.log(response.data.bpi)
       // console.log(response.data.bpi.USD.rate_float)
       this.bpi = response.data.bpi
-    }.bind(this))//これ何？
+    }.bind(this))
+    .catch(function(error){
+      console.log(error)
+    })
   }
 })
