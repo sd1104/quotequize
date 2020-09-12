@@ -1,13 +1,104 @@
 <div id="template">
 
-  <h2>テンプレート構文 プラクティス</h2>
+  <h2>v-once ディレクティブ</h2>
   <hr>
-  <p>
+  <p v-once>
     {{ message}}
   </p>
   <button v-on:click='clickhandler'>
     change!
   </button>
+  <br><br><br>
+
+  <h2>v-pre ディレクティブ</h2>
+  <hr>
+  <p v-pre>
+    {{ message}}
+  </p>
+  <br><br><br>
+
+  <h2>v-html ディレクティブ</h2>
+  <hr>
+  <p>
+    {{ htmlmessage}}
+  </p>
+  <p v-html="htmlmessage">
+    {{ htmlmessage }}
+  </p>
+  <br><br><br>
+
+  <h2>v-cloak ディレクティブ</h2>
+  <hr>
+  <p v-cloak>
+    {{ message}}
+  </p>
+  <br><br><br>
+
+  <h2>v-text ディレクティブ</h2>
+  <hr>
+  <p v-text="message" v-html="message">
+  </p>
+  <br><br><br>
+
+  <h2>v-cloak ディレクティブ</h2>
+  <hr>
+  <p v-cloak>
+    {{ message}}
+  </p>
+  <p v-cloak>
+    {{ number + 1}}
+  </p>
+  <p v-cloak>
+    {{ message.split('').reverse().join('') }}
+  </p>
+  <p v-cloak>
+    {{ ok ? 'YES' : 'NO' }}
+  </p>
+  <br><br><br>
+
+  <h2>ローカルフィルタ</h2>
+  <hr>
+  <p>
+    {{ price | numberFormat }}
+  </p>
+  <input type="text" v-bind:value="price | numberFormat">
+  <br><br><br>
+
+  <h2>グローバルフィルタ</h2>
+  <hr>
+  <p>
+    {{ price | numberFormat }}
+  </p>
+  <input type="text" v-bind:value="price | numberFormat">
+  <br><br><br>
+
+  <h2>フィルタの連結</h2>
+  <hr>
+  <p>
+    {{ jpyPrice }}
+  </p>
+  <p>
+    {{ jpyPrice | toUSD }}
+  </p>
+  <p>
+    {{ jpyPrice | toUSD | numberFormat }}
+  </p>
+  <br><br><br>
+
+  <h2>フィルタの引数</h2>
+  <hr>
+  <p>
+    {{ text | readmore(20, '....') }}
+  </p>
+  <br><br><br>
+
+  <h2>v-bind 省略記法</h2>
+  <hr>
+  <p>
+    <a v-bind:href="url" target="__blank">Link1</a>
+    <a :href="url" target="__blank">Link2</a>
+  </p>
+  <br><br><br>
 
 </div>
 <br><br><br>
