@@ -9,5 +9,5 @@ Rails.application.routes.draw do
       get 'template'
     end
   end
-  resources :books, only: :index
+  resources :books, only: [:index, :new, :create]
 end
