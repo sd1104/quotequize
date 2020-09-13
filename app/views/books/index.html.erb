@@ -1,14 +1,12 @@
-<div class="container">
-  <div class="row">
-    <% @books.each do |book| %>
-      <div class="col.s4.m6">
-        <div class="card">
-          <span class="card-title">
-            <%= book.title %>
-          </span>
-        </div>
+<div class="row">
+  <% @books.each do |book| %>
+    <div class="col.s4.m6">
+      <div class="card">
+        <span class="card-title">
+          <%= book.title %>
+        </span>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>
-<%= link_to 'back', root_path %>
+<%= link_to '>>HOME', root_path %>
