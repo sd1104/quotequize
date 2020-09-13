@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       get 'basic'
       get 'bitcoin'
       get 'template'
+      get 'calc'
     end
   end
   resources :books, only: :index
