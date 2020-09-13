@@ -1,0 +1,27 @@
+<h2>図書登録フォーム</h2>
+<hr>
+<%= form_with model: @book, class: "d-inline-flex", local: true do |f| %>
+  <div>
+    <%= f.label :タイトル %>
+    <%= f.text_field :title , class: "form-control mb-2 mr-sm-2 inline" %>
+  </div>
+  <div>
+    <%= f.label :著者 %>
+    <%= f.text_field :author, class: "form-control mb-2 mr-sm-2 inline" %>
+  </div>
+  <div>
+    <%= f.label :出版社 %>
+    <%= f.text_field :publisher, class: "form-control mb-2 mr-sm-2 inline" %>
+  </div>
+  <div>
+    <%= f.label :ジャンル %>
+    <%= f.text_field :genre, class: "form-control mb-2 mr-sm-2 inline" %>
+  </div>
+  <br>
+  <%= f.submit class: "btn btn-primary mb-2" %>
+<% end %>
+<hr>
+
+<br>
+<%= link_to 'back', books_path %>
+<%= javascript_pack_tag 'hello_vue' %>
