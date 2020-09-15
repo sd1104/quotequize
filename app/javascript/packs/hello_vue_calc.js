@@ -20,11 +20,19 @@ const calc = new Vue ({
       set: function(taxIncludedPrice) {
         this.basePrice = Math.ceil(taxIncludedPrice / 1.08)
       }
+    },
+    computedNumber: function() {
+      console.log('computed!')
+      return Math.random()
     }
   },
   methods: {
     reversedMessageMethod: function() {
       return this.message.split('').reverse().join('')
+    },
+    methodsNumber: function() {
+      console.log('methods!')
+      return Math.random()
     }
   }
 })
