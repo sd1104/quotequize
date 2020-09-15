@@ -1,9 +1,62 @@
-<h2>算出プロパティ　基本</h2>
-<hr>
 <div id="calc">
-  {{ message }}
-  {{ reversedMessage}}
+
+  <div>
+    <h2>算出プロパティ　基本</h2>
+    <hr>
+    <p>
+      データバインド：
+      {{ message }}
+    </p>
+    <p>
+      算出プロパティ：
+      {{ reversedMessage }}
+    </p>
+  </div>
+  <br><br><br>
+
+  <div>
+    <h2>算出プロパティとメソッドの比較</h2>
+    <hr>
+    <p>
+      データバインド：
+      {{ message }}
+    </p>
+    <p>
+      算出プロパティ：
+      {{ reversedMessage }}
+    </p>
+    <p>
+      メソッド：
+      {{ reversedMessageMethod() }}
+    </p>
+  </div>
+  <br><br><br>
+
+  <div>
+    <h2>算出プロパティ getter,setter</h2>
+    <hr>
+    <p>
+      base price:
+      <input type="text" v-model="basePrice">
+    </p>
+    <p>
+      tax included price:
+      <input type="text" v-model="taxIncludedPrice">
+    </p>
+  </div>
+  <br><br><br>
+
+  <div>
+    <h2>算出プロパティ キャッシュ</h2>
+    <hr>
+    <p>
+
+    </p>
+  </div>
+  <br><br><br>
+
 </div>
+
 
 
 <br><br><br>
