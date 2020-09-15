@@ -1,0 +1,72 @@
+<div id="calc">
+
+  <div>
+    <h2>算出プロパティ　基本</h2>
+    <hr>
+    <p>
+      データバインド：
+      {{ message }}
+    </p>
+    <p>
+      算出プロパティ：
+      {{ reversedMessage }}
+    </p>
+  </div>
+  <br><br><br>
+
+  <div>
+    <h2>算出プロパティとメソッドの比較</h2>
+    <hr>
+    <p>
+      データバインド：
+      {{ message }}
+    </p>
+    <p>
+      算出プロパティ：
+      {{ reversedMessage }}
+    </p>
+    <p>
+      メソッド：
+      {{ reversedMessageMethod() }}
+    </p>
+  </div>
+  <br><br><br>
+
+  <div>
+    <h2>算出プロパティ getter,setter</h2>
+    <hr>
+    <p>
+      base price:
+      <input type="text" v-model="basePrice">
+    </p>
+    <p>
+      tax included price:
+      <input type="text" v-model="taxIncludedPrice">
+    </p>
+  </div>
+  <br><br><br>
+
+  <div>
+    <h2>算出プロパティ キャッシュ</h2>
+    <hr>
+    <ol> 算出プロパティ
+      <li>{{ computedNumber }}</li>
+      <li>{{ computedNumber }}</li>
+      <li>{{ computedNumber }}</li>
+    </ol>
+    <ol> メソッド
+      <li>{{ methodsNumber() }}</li>
+      <li>{{ methodsNumber() }}</li>
+      <li>{{ methodsNumber() }}</li>
+    </ol>
+  </div>
+  <br><br><br>
+
+</div>
+
+
+
+<br><br><br>
+<%= link_to '>>HOME', root_path %>
+
+<%= javascript_pack_tag 'hello_vue_calc' %>
