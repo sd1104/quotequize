@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       get 'bitcoin'
       get 'template'
       get 'calc'
+      get 'monitor'
     end
   end
   resources :books, only: [:index, :new, :create]
