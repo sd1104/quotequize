@@ -7,5 +7,10 @@ const calc = new Vue ({
   el: '#calc',
   data: {
     message: "hello"
+  },
+  computed: {
+    reversedMessage: function() {
+      return this.message.split('').reverse().join('')
+    }
   }
 })
