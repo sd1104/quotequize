@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get 'template'
       get 'calc'
       get 'monitor'
+      get 'classdatabinding'
     end
   end
   resources :books, only: [:index, :new, :create]
