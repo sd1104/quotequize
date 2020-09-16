@@ -6,6 +6,7 @@ Vue.config.productionTip = false
 const classdatabinding = new Vue ({
   el: '#classdatabinding',
   data: {
-    message: 'hello'
+    isLarge: true,
+    hasError: true
   }
 })

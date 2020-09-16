@@ -1,3 +1,27 @@
-// Place all the styles related to the Page controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  padding: 50px;
+}
+
+#todo ul {
+  list-style: none;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+#todo li > span.done {
+  text-decoration: line-through;
+}
+
+.he {
+  height: 50px;
+}
+
+.large {
+  font-size: 36px;
+}
+
+.text-danger {
+  color: red;
+}

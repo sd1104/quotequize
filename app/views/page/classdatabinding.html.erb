@@ -1,5 +1,17 @@
 <div id="classdatabinding">
-  {{  message }}
+
+  <p class="he">
+    Hello <span v-bind:class="{large:isLarge, 'text-danger': hasError}">Vue.js!</span>
+  </p>
+  <p>
+    Vue.jsをフォントサイズを切り替えるチェックボックス
+    <br>
+    <input type="checkbox" v-model="isLarge">
+    <br>
+    Vue.jsをフォント色を切り替えるチェックボックス
+    <br>
+    <input type="checkbox" v-model="hasError">
+  </p>
 </div>
 
 
