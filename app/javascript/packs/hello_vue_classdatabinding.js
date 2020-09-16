@@ -13,6 +13,14 @@ const classdatabinding = new Vue ({
     classObject: {
       large: true,
       'text-danger': true
-    }
+    },
+    LargeClass: {
+      large: true,
+      'bg-gray': true
+    },
+    DangerClass: {
+      'text-danger': true
+    },
+    IsLarge: false
   }
 })
