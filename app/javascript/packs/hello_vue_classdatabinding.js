@@ -7,6 +7,12 @@ const classdatabinding = new Vue ({
   el: '#classdatabinding',
   data: {
     isLarge: true,
-    hasError: true
+    hasError: true,
+    largeClass: 'large',
+    dangerClass: 'text-danger',
+    classObject: {
+      large: true,
+      'text-danger': true
+    }
   }
 })
