@@ -1,8 +1,31 @@
 <div id="monitor">
-  <h1>テンプレート構文 アソート</h1>
+  <h1>監視プロパティ</h1>
   <hr>
   <hr>
   <br>
+  <h4>監視プロパティ　基本</h4>
+  <hr>
+  <p>
+    <input type="text" v-model:value="message">
+  </p>
+  <pre>
+    {{ $data }}
+  </pre>
+
+  <h4>監視プロパティ　単位変換ツール</h4>
+  <hr>
+  <p>
+    <input type="text" v-model:value="km">km
+  </p>
+  <p>
+    <input type="text" v-model:value="m">m
+  </p>
+  <p>
+    <input type="text" v-model:value="mm">mm
+  </p>
+  <pre>
+    {{ $data }}
+  </pre>
 
 </div>
 
