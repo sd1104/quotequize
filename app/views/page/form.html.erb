@@ -98,14 +98,11 @@
 
   <h4>修飾子の種類</h4>
   <br>
-    <select v-model="Selected" multiple>
-      <option disabled value="">Please select one</option>
-      <option value="Red">Red</option>
-      <option value="Blue">Blue</option>
-      <option value="Green">Green</option>
-    </select>
   <p>
-    {{ Selected }}
+    {{ message }}
+  </p>
+  <p>
+    <input type="text" v-model.lazy="message">
   </p>
   <br><br><br>
 
