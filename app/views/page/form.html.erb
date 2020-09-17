@@ -85,16 +85,30 @@
 
   <h4>フォームバインディング　セレクトボックス複数</h4>
   <br>
-    <select v-model="selected">
+    <select v-model="Selected" multiple>
       <option disabled value="">Please select one</option>
       <option value="Red">Red</option>
       <option value="Blue">Blue</option>
       <option value="Green">Green</option>
     </select>
   <p>
-    {{ selected }}
+    {{ Selected }}
   </p>
   <br><br><br>
+
+  <h4>修飾子の種類</h4>
+  <br>
+    <select v-model="Selected" multiple>
+      <option disabled value="">Please select one</option>
+      <option value="Red">Red</option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+    </select>
+  <p>
+    {{ Selected }}
+  </p>
+  <br><br><br>
+
 
 </div>
 
