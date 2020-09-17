@@ -7,9 +7,16 @@ Vue.component('hello-component', {
   template: '<p>hello</p>'
 })
 
+var localComponent = {
+  template: '<p>Hello</p>'
+}
+
 const component = new Vue ({
   el: "#component",
   data: {
     message: "hello"
+  },
+  components: {
+    'local-component': localComponent
   }
 })
