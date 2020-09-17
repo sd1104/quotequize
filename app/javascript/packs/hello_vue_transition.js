@@ -6,6 +6,15 @@ Vue.config.productionTip = false
 const transition = new Vue ({
   el: "#transition",
   data: {
-    message: "hello"
+    message: "hello",
+    show: false
+  },
+  methods: {
+    showTag: function() {
+      if (this.show === false)
+        return this.show = true
+      else if (this.show === true)
+        return this.show = false
+    }
   }
 })

@@ -3,6 +3,19 @@
   <hr>
   <br><br>
 
+  <button @click="showTag">
+  <%# <button @click="show=!show"> %>
+    Change
+  </button>
+  <br><br>
+  <transition>
+    <p v-show="show">
+    Hello Transition
+    </p>
+  </transition>
+  <pre>
+    {{ $data }}
+  </pre>
 
 </div>
 
