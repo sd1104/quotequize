@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       get 'calc'
       get 'monitor'
       get 'classdatabinding'
+      get 'conditional'
     end
   end
   resources :books, only: [:index, :new, :create]
