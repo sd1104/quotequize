@@ -6,6 +6,7 @@ Vue.config.productionTip = false
 const conditional = new Vue ({
   el: '#conditional',
   data: {
-    message: 'hello'
+    toggle: false,
+    color:'yellow'
   }
 })
