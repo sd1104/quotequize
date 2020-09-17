@@ -6,6 +6,10 @@ Vue.config.productionTip = false
 const form = new Vue ({
   el: "#form",
   data: {
-    message: 'hello'
+    message: 'hello',
+    toggle: true,
+    colors: [],
+    color: '',
+    selected: "",
   }
 })

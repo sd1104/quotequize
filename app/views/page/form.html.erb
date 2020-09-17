@@ -1,6 +1,104 @@
-<div id="#form">
-  {{ message }}
+<div id="form">
+  <h2>イベントハンドリング</h2>
+  <hr>
+  <br><br>
+
+  <h4>フォームバインディングの基本</h4>
+  <br>
+  <p>
+    {{ message }}
+  </p>
+  <p>
+    <input type="text" v-model="message">
+  </p>
+  <br><br><br>
+
+  <h4>フォームバインディング 複数行テキスト</h4>
+  <br>
+  <pre>
+    {{ message }}
+  </pre>
+  <p>
+   <textarea cols="30" rows="10" v-model="message">
+    {{ message}}
+   </textarea>
+  </p>
+  <pre>
+    {{ $data }}
+  </pre>
+  <br><br><br>
+
+  <h4>フォームバインディング　チェックボックス</h4>
+  <br>
+  <p v-if="toggle">
+    Yes
+  </p>
+  <p  v-else>
+    No
+  </p>
+  <p>
+    <input type="checkbox" v-model="toggle">
+  </p>
+  <br><br><br>
+
+  <h4>フォームバインディング　チェックボックス複数</h4>
+  <br>
+  <p>
+    <input type="checkbox" id='red' value="Red" v-model="colors">
+    <label for="red">Red</label>
+    <input type="checkbox" id='blue' value="Blue" v-model="colors">
+    <label for="red">Blue</label>
+    <input type="checkbox" id='green' value="Green" v-model="colors">
+    <label for="red">Green</label>
+  </p>
+  <pre>
+    {{ $data }}
+  </pre>
+  <br><br><br>
+
+
+  <h4>フォームバインディング　ラジオボタン</h4>
+  <br>
+    <input type="radio" id="red" value="Red" v-model="color">
+    <label for="red">Red</label>
+    <input type="radio" id="blue" value="Blue" v-model="color">
+    <label for="red">Blue</label>
+    <input type="radio" id="green" value="Green" v-model="color">
+    <label for="red">Green</label>
+  <p>
+    {{ color }}
+  </p>
+  <br><br><br>
+
+  <h4>フォームバインディング　セレクトボックス単体</h4>
+  <br>
+    <select v-model="selected">
+      <option disabled value="">Please select one</option>
+      <option value="Red">Red</option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+    </select>
+  <p>
+    {{ selected }}
+  </p>
+  <br><br><br>
+
+  <h4>フォームバインディング　セレクトボックス複数</h4>
+  <br>
+    <select v-model="selected">
+      <option disabled value="">Please select one</option>
+      <option value="Red">Red</option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+    </select>
+  <p>
+    {{ selected }}
+  </p>
+  <br><br><br>
+
 </div>
+
+
 
 
 <br><br><br>
