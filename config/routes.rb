@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       get 'conditional'
       get 'eventhandler'
       get 'form'
+      get 'component'
     end
   end
   resources :books, only: [:index, :new, :create]
