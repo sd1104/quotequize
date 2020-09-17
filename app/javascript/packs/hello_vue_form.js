@@ -11,6 +11,7 @@ const form = new Vue ({
     colors: [],
     color: '',
     selected: "",
-    Selected: []
+    Selected: [],
+    age: 0
   }
 })

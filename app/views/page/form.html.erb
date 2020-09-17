@@ -96,7 +96,7 @@
   </p>
   <br><br><br>
 
-  <h4>修飾子の種類</h4>
+  <h4>修飾子の種類 lazy,trim,number</h4>
   <br>
   <p>
     {{ message }}
@@ -104,6 +104,16 @@
   <p>
     <input type="text" v-model.lazy="message">
   </p>
+  <p>
+    <input type="text" v-model.trim="message">
+  </p>
+  <p>
+    <input type="number" v-model.number="age">
+  </p>
+  {{ age + 10 }}
+  <pre>
+    {{ $data }}
+  </pre>
   <br><br><br>
 
 
