@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       get 'classdatabinding'
       get 'conditional'
       get 'eventhandler'
+      get 'form'
     end
   end
   resources :books, only: [:index, :new, :create]
