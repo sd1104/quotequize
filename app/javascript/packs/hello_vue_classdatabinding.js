@@ -21,6 +21,12 @@ const classdatabinding = new Vue ({
     DangerClass: {
       'text-danger': true
     },
-    IsLarge: false
+    IsLarge: true,
+    color: 'red',
+    fontSize: 48,
+    styleObject: {
+      color: 'blue',
+      fontSize: '36px'
+    }
   }
 })
