@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       get 'monitor'
       get 'classdatabinding'
       get 'conditional'
+      get 'eventhandler'
     end
   end
   resources :books, only: [:index, :new, :create]
