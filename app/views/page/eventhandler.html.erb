@@ -65,6 +65,21 @@
 
   <h4>システム修飾子</h4>
   <hr>
+  <p>
+    <input type="text" v-model="erase" v-on:keyup.ctrl.67="clear">
+  </p>
+  <div v-on:click.shift="ClearHandler">
+    Click　Me!
+  </div>
+  <pre>
+    {{ $data }}
+  </pre>
+
+  <h4>v-on 省略記法</h4>
+  <hr>
+  <button @click="v_on_handler">
+  click
+  </button>
 
 </div>
 

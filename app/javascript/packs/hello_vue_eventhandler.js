@@ -27,6 +27,12 @@ const eventhandler = new Vue ({
     },
     clear: function() {
       this.erase = ""
+    },
+    ClearHandler: function() {
+      alert('shift + click')
+    },
+    v_on_handler: function() {
+      alert('v-on-omit-writing')
     }
   }
 })
