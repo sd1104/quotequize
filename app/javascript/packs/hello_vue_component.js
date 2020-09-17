@@ -7,16 +7,26 @@ Vue.component('hello-component', {
   template: '<p>hello</p>'
 })
 
-var localComponent = {
+let localComponent = {
   template: '<p>Hello</p>'
 }
+
+Vue.component('button-counter', {
+  data: function() {
+    return {
+      count: 0
+    }
+  },
+  template: '<p>count:<button @click="count++">{{ count }}</button></p>'
+})
 
 const component = new Vue ({
   el: "#component",
   data: {
-    message: "hello"
+    message: "hello",
+    counter: 0
   },
   components: {
-    'local-component': localComponent
+    'local-component' : localComponent
   }
 })
