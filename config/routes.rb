@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       get 'eventhandler'
       get 'form'
       get 'component'
+      get 'transition'
     end
   end
   resources :books, only: [:index, :new, :create]

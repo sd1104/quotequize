@@ -1,0 +1,26 @@
+<div id="transition">
+  <h2>トランジションの基本</h2>
+  <hr>
+  <br><br>
+
+  <button @click="showTag">
+  <%# <button @click="show=!show"> %>
+    Change
+  </button>
+  <br><br>
+  <transition>
+    <p v-show="show">
+    Hello Transition
+    </p>
+  </transition>
+  <pre>
+    {{ $data }}
+  </pre>
+
+</div>
+
+
+<br><br><br>
+<%= link_to '>>HOME', root_path %>
+
+<%= javascript_pack_tag 'hello_vue_transition' %>
