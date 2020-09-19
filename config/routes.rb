@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get 'form'
       get 'component'
       get 'transition'
+      get 'router'
     end
   end
   resources :books, only: [:index, :new, :create]
