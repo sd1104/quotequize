@@ -17,5 +17,5 @@ Rails.application.routes.draw do
       get 'router'
     end
   end
-  resources :books, only: [:index, :new, :create]
+  resources :books, only: [:index, :new, :create, :show]
 end

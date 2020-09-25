@@ -1,0 +1,17 @@
+<div class="card">
+  <%= link_to book_path(book) do %>
+    <span class="card-title">
+      <%= book.title %>
+    </span>
+  <% end %>
+  <br>
+  author:
+  <%= book.author %>
+  <br>
+  genre:
+  <%= book.genre %>
+  <br>
+  publisher:
+  <%= book.publisher %>
+  <br><br>
+</div>
