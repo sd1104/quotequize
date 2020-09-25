@@ -1,7 +1,5 @@
-  <div class="col.s4.m6">
-    <div class="card">
-      <span class="card-title">
-        <%= @book.title %>
-      </span>
-    </div>
-  </div>
+<div class="row">
+  <h4>book detail</h4>
+  <%= render partial: 'book-template', locals: { book: @book } %>
+</div>
+<br><br><br>
