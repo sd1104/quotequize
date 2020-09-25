@@ -1,14 +1,6 @@
 <div class="row">
   <% @books.each do |book| %>
-    <div class="col.s4.m6">
-      <div class="card">
-        <%= link_to book_path(book) do %>
-          <span class="card-title">
-            <%= book.title %>
-          </span>
-        <% end %>
-      </div>
-    </div>
+    <%= render partial: 'book-template', locals: { book: book } %>
   <% end %>
 </div>
 <br><br><br>
