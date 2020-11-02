@@ -1,8 +1,0 @@
-<div class="row">
-  <% @books.each do |book| %>
-    <%= render partial: 'book-template', locals: { book: book } %>
-  <% end %>
-</div>
-<br><br><br>
-<%= link_to '>>HOME', root_path %>
-<%= link_to 'books#new', new_book_path %>
